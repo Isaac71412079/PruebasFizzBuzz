@@ -1,8 +1,13 @@
-function saludar(nombre,edad) {
+function saludar(nombre,edad,genero) {
   let saludo = "Hola " + nombre;
 
   if (edad > 30) {
-    saludo = "Hola Sr. " + nombre;
+    if (genero === "masculino"){
+      saludo = "Hola Sr. " + nombre;
+    }
+    else {
+      saludo = "Hola Sra. " + nombre;
+    }
   }
 
   return saludo;
