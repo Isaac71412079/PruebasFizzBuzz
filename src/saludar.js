@@ -6,9 +6,9 @@ function saludar(nombre, edad, genero, idioma) {
     
     if (edad > 30) {
       if (genero === "masculino") {
-        saludo = obtenerSaludoSegunHora() + " Hola Sr. " + nombre;
+        saludo = obtenerSaludoSegunHora("es") + " Hola Sr. " + nombre;
       } else {
-        saludo = obtenerSaludoSegunHora() + " Hola Sra. " + nombre;
+        saludo = obtenerSaludoSegunHora("es") + " Hola Sra. " + nombre;
       }
     }
   } else if (idioma === "en") {
