@@ -7,18 +7,24 @@ describe("FizzBuzz", () => {
     it("deberia generar el mismo numero para otro numero que no tiene reglas como para el 2", () => {
         expect(generarFizzBuzz(2)).toEqual("2");
     });
+//--------------------------------------------------------------------------------------
+
     it("deberia generar Fizz para un numero que sigue la regla como el 3", () => {
         expect(generarFizzBuzz(3)).toEqual("Fizz");
     });
     it("deberia generar Fizz para un numero que sigue la regla como el 6", () => {
         expect(generarFizzBuzz(6)).toEqual("Fizz");
     });
-
+//--------------------------------------------------------------------------------------
     it("deberia generar Buzz para un numero que sigue la regla como el 5", () => {
         expect(generarFizzBuzz(5)).toEqual("Buzz");
     });
     it("deberia generar Buzz para un numero que sigue la regla como el 10", () => {
         expect(generarFizzBuzz(10)).toEqual("Buzz");
+    });
+
+    it("deberia generar FizzBuzz para un numero que sigue la regla como el 15", () => {
+        expect(generarFizzBuzz(15)).toEqual("FizzBuzz");
     });
 
   });
