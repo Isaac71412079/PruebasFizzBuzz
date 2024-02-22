@@ -10,4 +10,7 @@ describe("FizzBuzz", () => {
     it("deberia generar Fizz para un numero que sigue la regla como el 3", () => {
         expect(generarFizzBuzz(3)).toEqual("Fizz");
     });
+    it("deberia generar Fizz para un numero que sigue la regla como el 6", () => {
+        expect(generarFizzBuzz(6)).toEqual("Fizz");
+    });
   });
